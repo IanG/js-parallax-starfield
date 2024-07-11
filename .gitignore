@@ -128,3 +128,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+.idea/.gitignore
+.idea/js-parallax-starfield.iml
+.idea/modules.xml
+.idea/vcs.xml
