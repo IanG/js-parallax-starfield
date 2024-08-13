@@ -12,6 +12,7 @@ const MAX_STAR_DENSITY = 10000;
 
 const canvas = getCanvas();
 const ctx = canvas.getContext('2d');
+
 //const bitmapFont= new BitmapFont();
 
 document.getElementById("starrange").oninput = function () {
