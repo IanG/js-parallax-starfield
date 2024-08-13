@@ -119,7 +119,7 @@ function drawStars()
 
   starField.forEach(star => {
     ctx.beginPath();
-    ctx.fillStyle = `rgba(255, 255, 255, ${star.twinkles === true ? star.opacity : 1})`;;
+    ctx.fillStyle = `rgba(255, 255, 255, ${star.twinkles === true ? star.opacity : 1})`;
     ctx.arc(star.x, star.y, star.z,0,2 * Math.PI);
     ctx.fill();
   });
