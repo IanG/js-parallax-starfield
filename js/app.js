@@ -1,4 +1,4 @@
-import {BitmapFont} from "./fonts/bitmapfont.js";
+//import {BitmapFont} from "./fonts/bitmapfont.js";
 
 let frameCount = 0;
 let framesPerSecond = 0;
@@ -12,7 +12,7 @@ const MAX_STAR_DENSITY = 10000;
 
 const canvas = getCanvas();
 const ctx = canvas.getContext('2d');
-const bitmapFont= new BitmapFont();
+//const bitmapFont= new BitmapFont();
 
 document.getElementById("starrange").oninput = function () {
   starDensity = MAX_STAR_DENSITY - this.value + MIN_STAR_DENSITY;
@@ -79,12 +79,13 @@ function draw()
   ctx.clearRect(0, 0, width, height);
 
   drawStars();
-  drawText();
+  //drawText();
   drawFPS();
 
   ctx.restore();
 }
 
+/*
 function drawText()
 {
   drawPhrase("Javascript Canvas", 175, 100, 50);
@@ -109,6 +110,7 @@ function drawLetter(letter, x, y, w, h)
 {
   bitmapFont.drawLetter(ctx, letter, x, y, w, h);
 }
+*/
 
 function drawStars()
 {
